@@ -1,0 +1,63 @@
+<svg viewBox="0 0 820 380" width="820" height="380" xmlns="http://www.w3.org/2000/svg" font-family="'SF Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1421"/>
+      <stop offset="1" stop-color="#130e18"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- window -->
+  <rect x="10" y="12" width="800" height="356" rx="16" fill="url(#bg)" stroke="#3a2e44" stroke-width="1.5"/>
+
+  <!-- title bar -->
+  <circle cx="42" cy="38" r="6.5" fill="#fb7185"/>
+  <circle cx="66" cy="38" r="6.5" fill="#f5c98a"/>
+  <circle cx="90" cy="38" r="6.5" fill="#f9a8d4"/>
+  <text x="410" y="43" text-anchor="middle" font-size="14" fill="#8b7a99" letter-spacing="1">bayan@glasgow : ~ <tspan fill="#f472b6">✦</tspan></text>
+  <line x1="10" y1="60" x2="810" y2="60" stroke="#291f33"/>
+
+  <!-- line 1 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.05;0.075;0.9;1" dur="9s" repeatCount="indefinite"/>
+    <text x="40" y="112" font-size="18">
+      <tspan fill="#f472b6">bayan@glasgow:~$</tspan><tspan fill="#ece6f0"> whoami</tspan>
+    </text>
+  </g>
+
+  <!-- line 2 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.18;0.205;0.9;1" dur="9s" repeatCount="indefinite"/>
+    <text x="40" y="156" font-size="16">
+      <tspan fill="#9b8aa8">↳ </tspan><tspan fill="#ece6f0">bayan — cs @ glasgow · systems, security &amp; the web</tspan>
+    </text>
+  </g>
+
+  <!-- line 3 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.33;0.355;0.9;1" dur="9s" repeatCount="indefinite"/>
+    <text x="40" y="202" font-size="18">
+      <tspan fill="#f472b6">bayan@glasgow:~$</tspan><tspan fill="#ece6f0"> stack --focus</tspan>
+    </text>
+  </g>
+
+  <!-- line 4 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.46;0.485;0.9;1" dur="9s" repeatCount="indefinite"/>
+    <text x="40" y="246" font-size="16">
+      <tspan fill="#f472b6">networking</tspan><tspan fill="#6f6280"> ▸ </tspan><tspan fill="#f5c2a7">cybersecurity</tspan><tspan fill="#6f6280"> ▸ </tspan><tspan fill="#f9a8d4">systems</tspan><tspan fill="#6f6280"> ▸ </tspan><tspan fill="#f472b6">full-stack</tspan>
+    </text>
+  </g>
+
+  <!-- line 5 + cursor -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6;0.625;0.9;1" dur="9s" repeatCount="indefinite"/>
+    <text x="40" y="306" font-size="18"><tspan fill="#f472b6">bayan@glasgow:~$</tspan></text>
+    <rect x="225" y="290" width="11" height="20" rx="1" fill="#f472b6" filter="url(#glow)">
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.45;0.95;1" dur="1.05s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
